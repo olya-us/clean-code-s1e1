@@ -4,24 +4,24 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.matrix {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.matrix .matrix__img {
     width: 100%;
 }
-.aaa .more_inf {
+.matrix .matrix__link {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.matrix { text-align: center;
 }
 }
-.centered-main-page-element {
+.todos {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -31,7 +31,7 @@ body {
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.todos__row {
     display: flex;
 }
 ul {
@@ -102,11 +102,11 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-li > * {
+.todos__list > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.todos__list > input[type="checkbox"] {
     margin: 0 10px;
 }
 li > label {
@@ -115,20 +115,20 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+li > input[type="text"] {
     width: 226px
 }
-button.delete img {
+.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.delete img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.todos__list--completed {
     text-decoration: line-through
     color: #888;
 }
@@ -138,11 +138,11 @@ ul li input[type=text] {
     display:none
 }
 
-ul li.editMode input[type=text] {
+.editMode input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+.editMode label {
     display:none;
 }

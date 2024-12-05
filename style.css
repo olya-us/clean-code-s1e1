@@ -17,9 +17,10 @@ body {
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-.matrix { text-align: center;
-}
+@media (max-width: 768px) {
+  .matrix { 
+    text-align: center;
+  }
 }
 .todos {
     display: block;

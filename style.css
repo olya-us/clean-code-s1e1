@@ -65,7 +65,7 @@ button {
     color: #3a3a3a;
 }
 /* Heading */
-h3,
+.todos__block-title,
 .todos__add-title {
   color: #333;
   font-weight: 700;
@@ -101,7 +101,7 @@ h3,
 }
 
 /* Task list */
-li {
+.todos__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -124,12 +124,12 @@ li {
 .todos__item > .todos__input {
   width: 226px;
 }
-.todos__button--delete img {
+.todos__button--delete .todos__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.todos__button--delete img:hover {
+.todos__button--delete .todos__icon:hover {
   transform: rotateZ(0);
 }
 

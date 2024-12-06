@@ -28,7 +28,7 @@
   margin: 0 auto 0;
 }
 
-.todos__label{
+.todos__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -50,7 +50,7 @@ h3 {
   list-style: none;
 }
 input,
-button{
+button {
   outline: none;
 }
 button {
